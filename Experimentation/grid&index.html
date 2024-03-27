@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type=" text/css" class="experimentation/index.css"></style>
+    <title>William Serafim</title>
+  </head>
+  <body>
+    <style type="text/css" class="PENIS">
+      Body {
+        background-color: #000;
+        text-align: left;
+        color: yellow;
+        margin: 0 24pt 0 24pt;
+        font-family: Arial, sans-serif;
+        font-size: 13pt;
+      }
+      div {
+        height: 16pt;
+      }
+      a {
+        color: #ff66ff;
+        text-align: right;
+        margin: 0 24pt 0 24pt;
+        text-decoration: none;
+      }
+      b {
+        background-color: #000;
+        text-align: right;
+        color: yellow;
+        margin: 0 24pt 0 24pt;
+        font-family: Arial, sans-serif;
+        font-size: 13pt;
+      }
+    * {
+      box-sizing: border-box;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        font-size: 1em;
+        padding: 1em;
+    }
+    .flex-item-left {
+        padding: 1em;
+        flex: 76%;
+    }
+    .flex-item-middle {
+        padding: 0.25em;
+        flex: 8%;
+    }
+    .flex-item-right {
+        padding: 1em;
+        flex: 16%;
+    }
+    /* Responsive layout - makes a one column-layout instead of a two-column layout */
+    
+    @media (max-width: 800px) {
+        .flex-item-right,
+        .flex-item-left {
+          flex: 100%;
+        }
+    }
+    </style>
+</head>
+<div class="flex-container">
+      <div class="flex-item-left">[content]</div>
+      <div class="flex-item-middle"></div>
+      <div class="flex-item-right">Week 2</div>
+    </div>
+  </body>
+</html>
