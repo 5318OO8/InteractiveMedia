@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  margin: 0% 10%;
+  color: rgb(151, 55, 176);
+}
+h1 {
+  color: rgb(151, 55, 176);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+ARTIST body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mother {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background: linear-gradient(#fac8fa, #fcfafc);
+}
+
+#title {
+  text-align: center;
+  color: #a789b3;
+  width: 600px;
+  margin: 0 auto;
+}
+
+#titletxxt {
+  font-size: 25px;
+  font-style: italic;
+}
+
+#nxxt {
+  background: linear-gradient(
+    32deg,
+    rgba(20, 52, 255, 0.6),
+    rgba(121, 163, 116, 0.5) 70%,
+    rgba(119, 45, 150, 0.6)
+  );
+  padding: 6px 13px;
+  font-size: 20px;
+  color: #f0e6f5;
+  border-radius: 50px;
+  box-shadow: 0px 0px 12px 3px #e787ff;
+  border: none;
+  position: absolute;
+  bottom: 8%;
+  left: 45%;
+}
+
+#nxxt:hover {
+  transition: 2s;
+  box-shadow: 0px 0px 40px 10px #e787ff;
+}
+
+#nxxt:active {
+  transition: 0.1s;
+  box-shadow: 0px 0px 10px 2px #e787ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center; /* This aligns items vertically in the center */
+  justify-items: center; /* This aligns items horizontally in the center */
+}
+.grid-item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+.grid-item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black; /* This creates a 2px solid black border around each grid item */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.grid-item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+}
+/* For screens smaller than 600px, make the grid items stack vertically */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* For screens between 600px and 900px, make the grid items display in two columns */
+@media (min-width: 600px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* For screens larger than 900px, make the grid items display in three columns */
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.highlight {
+  background-color: rgb(
+    0,
+    4,
+    228
+  ); /* This will make the background color of the highlighted items yellow */
+}
